@@ -1,13 +1,11 @@
-import { useState } from 'react'
+import Banner from './components/Banner'
 
 
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <h1>hello</h1>
+      <Banner src="./public/Banner_Desktop.png" alt="Banner"></Banner>
     </>
   )
 }
