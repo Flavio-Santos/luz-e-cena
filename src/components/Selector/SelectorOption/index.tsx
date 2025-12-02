@@ -1,4 +1,6 @@
-const Header = () => {
+
+
+const index = () => {
   return (
     <div>
       
@@ -6,4 +8,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default index
