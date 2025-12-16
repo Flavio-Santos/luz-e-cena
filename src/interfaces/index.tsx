@@ -4,9 +4,9 @@ export interface Movie {
   id: number;
   src: string;
   alt: string;
-  title: string;
+  titulo: string;
   genero: string;
-  duracao: string;
+  duracao: number;
   categoria: Categoria;
   censura: Censura;
 }
