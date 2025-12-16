@@ -1,26 +1,13 @@
-import React from 'react';
 import styles from './CardMovie.module.css';
 import Tag from '../Tag';
+import type { Movie } from '../../interfaces';
 
-type Categoria = '2D' | '3D';
-type Censura = 'Livre' | '10 anos' | '12 anos' | '14 anos' | '16 anos';
-
-interface CardMovieProps {
-  src: string;
-  alt: string;
-  title: string;
-  genero: string;
-  duracao: string;
-  categoria: Categoria;
-  censura: Censura;
-}
-
-const CardMovie = (props: CardMovieProps) => {
+const CardMovie = (props: Movie) => {
   const { src, alt, title, genero, duracao, categoria, censura } = props;
   return (
     <li className={styles.card}>
       <img src={src} alt={alt} />
-      <div children={styles.container}>
+      <div className={styles.container}>
         <h3>{title}</h3>
         <div className={styles.informacoes}>
           <div className={styles.linha1}>
