@@ -1,28 +1,13 @@
-import { useEffect, useState } from 'react';
 import styles from './MovieSection.module.css';
 import Fieldset from '../Fieldset';
 import InputText from '../InputText';
 import Button from '../Button';
 import { FaSearch } from 'react-icons/fa';
 import MoviesList from '../MovieList';
-import type { Movie } from '../../interfaces';
-import { getMovies } from '../../api';
+import userFetchMovies from '../../hooks/userFetchMovies';
 
 const MovieSection = () => {
-  const [movies, setMovies] = useState<Movie[]>([]);
-
-  const fetchMovies = async () => {
-    try {
-      const movies = await getMovies();
-      setMovies(movies);
-    } catch (error) {
-      console.error('Error fetching movies:', error);
-    }
-  };
-
-  useEffect(() => {
-    fetchMovies();
-  }, []);
+  const { movies, isLoading, error } = userFetchMovies();
 
   return (
     <main>
