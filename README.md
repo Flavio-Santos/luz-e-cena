@@ -68,8 +68,17 @@ of movies from a mock server (`json-server`) and displays them on the frontend.
 
 <!-- Add screenshots or GIFs of your app here -->
 
-- App Screenshot 1
-- App Screenshot 2
+- ![
+Logo do Projeto
+](./public/doc_md/home_top.png)
+
+- ![
+Logo do Projeto
+](./public/doc_md/home_middle.png)
+
+- ![
+Logo do Projeto
+](./public/doc_md/home_footer.png)
 
 ## 📜 Scripts
 
