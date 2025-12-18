@@ -19,6 +19,19 @@ of movies from a mock server (`json-server`) and displays them on the frontend.
 - Reusable components built with React, TypeScript, and CSS Modules.
 - Clean and modular code structure.
 
+## 📚 React Features
+
+- How to create and structure React components using TypeScript and JSX.
+- Using **CSS Modules** for encapsulated component styling.
+- Structuring forms with semantic tags (e.g., `<form>`, `<fieldset>`, `<input>`) inside
+  React components.
+- Passing specific **props** to configure form elements and other components.
+- Importing and integrating components to promote **reusability **and** modularity**.
+- Using VS Code shortcuts like `rafce` to quickly scaffold functional components.
+- Implementing **composition techniques** by importing and reusing smaller components
+  within larger ones.
+- Correctly referencing and applying images in React from the `public` folder.
+
 ## 🛠️ Technologies Used
 
 | Technology  | Description                 |
