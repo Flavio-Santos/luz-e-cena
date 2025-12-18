@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { getMovies } from '../api';
 import type { Movie } from '../interfaces';
 
-const userFetchMovies = () => {
+const useFetchMovies = () => {
   const [movies, setMovies] = useState<Movie[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
@@ -27,4 +27,4 @@ const userFetchMovies = () => {
   return { movies, isLoading, error };
 };
 
-export default userFetchMovies;
+export default useFetchMovies;

@@ -4,11 +4,11 @@ import InputText from '../InputText';
 import Button from '../Button';
 import { FaSearch } from 'react-icons/fa';
 import MoviesList from '../MovieList';
-import userFetchMovies from '../../hooks/userFetchMovies';
+import useFetchMovies from '../../hooks/useFetchMovies';
 import useFilterMovies from '../../hooks/useFilterMovies';
 
 const MovieSection = () => {
-  const { movies, isLoading, error } = userFetchMovies();
+  const { movies, isLoading, error } = useFetchMovies();
 
   const { searchTerm, setSearchTerm, filteredMovies, handleSearch } =
     useFilterMovies(movies);

@@ -1,73 +1,88 @@
-# React + TypeScript + Vite
+# Luz e Cena
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Luz e Cena is a study project developed with React and TypeScript as part of an Alura
+course. The main goal was to create a simple cinema visualization app that fetches a list
+of movies from a mock server (`json-server`) and displays them on the frontend.
 
-Currently, two official plugins are available:
+## 📚 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Purpose:** Practice building reusable React components with TypeScript and CSS
+  Modules.
+- **Backend:** Uses `json-server` to simulate a REST API for movie data.
+- **Frontend:** Fetches movies from the server, displays them in a list, and allows
+  searching by movie name.
 
-## React Compiler
+## ✨ Main Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Fetches and displays a list of movies from a mock API.
+- Search functionality to filter movies by name.
+- Reusable components built with React, TypeScript, and CSS Modules.
+- Clean and modular code structure.
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+| Technology  | Description                 |
+| ----------- | --------------------------- |
+| React       | UI library                  |
+| TypeScript  | Static typing               |
+| Vite        | Fast development/build tool |
+| json-server | Mock REST API               |
+| axios       | HTTP client                 |
+| classnames  | Conditional CSS classes     |
+| react-icons | Icon library                |
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Prerequisites
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Node.js (v18+ recommended)
+- npm or yarn
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Installation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. **Clone the repository:**
+   ```
+   git clone https://github.com/your-username/luz-e-cena.git
+   cd luz-e-cena
+   ```
+2. **Install dependencies:**
+   ```
+   npm install
+   or
+   yarn install
+   ```
+3. **Start the mock API server:**
+   ```
+   npm run server
+   # or
+   yarn server
+   ```
+   The server will run at http://localhost:4000.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🖥️ Usage
+
+- The homepage displays a list of movies currently "showing".
+- Use the search bar to filter movies by their title.
+
+## 📸 Screenshots
+
+<!-- Add screenshots or GIFs of your app here -->
+
+- App Screenshot 1
+- App Screenshot 2
+
+## 📜 Scripts
+
+| Command           | Description                       |
+| ----------------- | --------------------------------- |
+| `npm run dev`     | Start the Vite development server |
+| `npm run build`   | Build the app for production      |
+| `npm run lint`    | Run ESLint                        |
+| `npm run preview` | Preview the production build      |
+| `npm run server`  | Start json-server on port 4000    |
+
+## 📝 License
+
+This project has educational and portfolio purposes.
+
+---
